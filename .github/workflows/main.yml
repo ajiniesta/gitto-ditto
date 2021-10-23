@@ -42,6 +42,6 @@ jobs:
           # A DigitalOcean personal access token
           token: ${{secrets.patdo}}
           # Path of the spec file to deploy
-          spec: gitto-ditto# optional, default is ./deploy/app.yaml
+          #spec: gitto-ditto# optional, default is ./deploy/app.yaml
           # ID of the app to update
-          #app-id: # optional
+          app-id: gitto-ditto # optional
