@@ -40,8 +40,8 @@ jobs:
         uses: jjst/action-digitalocean-deploy-app@v2
         with:
           # A DigitalOcean personal access token
-          token: 
+          token: ${{secrets.patdo}}
           # Path of the spec file to deploy
-          spec: # optional, default is ./deploy/app.yaml
+          #spec: # optional, default is ./deploy/app.yaml
           # ID of the app to update
-          app-id: # optional
+          #app-id: # optional
