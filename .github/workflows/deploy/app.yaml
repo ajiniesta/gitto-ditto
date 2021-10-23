@@ -1,0 +1,15 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+name: gitto-ditto
+region: lon
+static_sites:
+- environment_slug: html
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: ajiniesta/gitto-ditto
+  name: gitto-ditto
+  routes:
+  - path: /
+  source_dir: /
